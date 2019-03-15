@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Creepy";
+    src: url("Assets/Fonts/Creepy.woff") format("woff"), url("Assets/Fonts/Creepy.woff2") format("woff2");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    margin: 0;
+    background: radial-gradient(#9d5900, #3D2200);
+    /* background: linear-gradient(#9d5900, #3d2200) */
+}
+
+.page-title{
+    color: #ff6d00;
+    /* font-family: Creepy, sans-serif; */
+    font-weight: normal;
+    text-align: center;
+    font-size: 4em;
+    margin:0;
+}
+
+.game-info{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.game-info-container{
+    grid-column:  1 / -1;
+    display: flex;
+    justify-content: space-between;
+    margin: .25em;
+}
+
+.game-container {
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    margin:0;
+}
+
+.card {
+    background-color: grey;
+    height: 155px;
+    width: 105px;
+}
